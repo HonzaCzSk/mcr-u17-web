@@ -1,0 +1,15 @@
+# personal data
+data\tymy.json
+data\real\tymy.json
+
+# environment
+.env
+
+# editor
+.vscode
+.DS_Store
+
+# other 
+google5bfcca48d7c98782.html
+.nojekyll
+CNAME

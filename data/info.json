@@ -1,0 +1,73 @@
+{
+  "updated": "17.03.2026 08:50",
+  "venue": {
+    "title": "Místo konání",
+    "address": "Eliščino nábřeží 777, Hradec Králové, 500 03",
+    "note": "",
+    "mapsUrl": "https://www.google.com/maps/place/TJ+Sokol+Hradec+Kr%C3%A1lov%C3%A9/@50.2132827,15.8290453,20.87z/data=!4m6!3m5!1s0x470c2b2ee9083f57:0xdadd5997f9d5361d!8m2!3d50.213257!4d15.8289909!16s%2Fg%2F11h52sp2wy!5m1!1e2?entry=ttu&g_ep=EgoyMDI2MDIwNC4wIKXMDSoASAFQAw%3D%3D"
+  },
+  "transport": {
+    "title": "Doprava",
+    "items": [
+      "Zastávka Muzeum – busy 12, 13, 16, 17 · trolejbusy 3, 4, 7", "",
+      "Auto: Hlavní tah D11 Praha – HK, silnice I/35 z Pardubic nebo D35 Liberec – Olomouc (doporučujeme se vyhnout Vysokému Mýtu)."
+    ]
+  },
+  "parking": {
+    "title": "Parkování",
+    "status": "final",
+    "paragraphs": [
+      "MHD: Z hlavního nádraží se k nám do haly dostanete autobusy 12, 13, 16, 17 a trolejbusy 3, 4, 7.",
+      "Auto: Parkování v okolí haly je možné, ale doporučujeme dorazit s rezervou kvůli omezené kapacitě a možným dopravním komplikacím."
+    ],
+    "mapUrl": "/assets/docs/parkovani-hk-zony.pdf",
+    "mapLabel": "Mapa parkovacích zón – Žlutá zóna (PDF)"
+  },
+  "tickets": {
+    "title": "Vstupné a občerstvení",
+    "paragraphs": [
+      "Vstup zdarma",
+      "Po celou dobu turnaje je vstup bez placení.",
+      "V hale bude občerstvení (bufet)."
+    ]
+  },
+  "org": {
+    "title": "Organizační info",
+    "text": "Detailní informace k akreditaci, šatnám a režimu v hale zveřejníme přibližně dva týdny před zahájením turnaje."
+  },
+  "cta": {
+    "primaryText": "Navigace v Google Maps",
+    "secondaryText": "Napsat organizátorům",
+    "contactsHref": "kontakty.html"
+  },
+  "contacts": [
+    {
+      "type": "email",
+      "label": "Email",
+      "name": "Jiří Jirsa – Organizační pracovník, obecné dotazy",
+      "value": "basket.ovc@seznam.cz",
+      "href": "mailto:basket.ovc@seznam.cz"
+    },
+    {
+      "type": "email",
+      "label": "Email",
+      "name": "Jan Votroubek – vysílání, fotografie, sociální sítě",
+      "value": "mistrovstvi.republiky.u15@gmail.com",
+      "href": "mailto:mistrovstvi.republiky.u15@gmail.com"
+    },
+    {
+      "type": "phone",
+      "label": "Telefon",
+      "name": "Jiří Jirsa",
+      "value": "+420 725 450 130",
+      "href": "tel:+420725450130"
+    },
+    {
+      "type": "instagram",
+      "label": "Instagram",
+      "name": "Klub",
+      "value": "@hradeckelvice",
+      "href": "https://instagram.com/hradeckelvice"
+    }
+  ]
+}
