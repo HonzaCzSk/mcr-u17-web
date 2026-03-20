@@ -1,10 +1,10 @@
-# MČR U15 – Basketball Championship Website
+# MČR U17 – Basketball Championship Website
 
-Repository for the official website of the Czech U15 Girls Basketball Championship.
+Repository for the official website of the Czech U17 Girls Basketball Championship.
 
 The site provides match schedules, results, team rosters, and tournament information.
 
-Live website: <https://mcr-u15.cz>
+Live website: <https://mcr-u17.cz>
 
 ## Tech Stack
 
@@ -64,6 +64,6 @@ The website is deployed using GitHub Pages. Any push to the master branch update
 
 ## About the Tournament
 
-Czech Republic U15 Girls Basketball Championship  
+Czech Republic U17 Girls Basketball Championship  
 8 teams competing in group stage followed by playoffs.  
 24.–26. dubna 2026 • Hradec Králové

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
  
-Sitemap: https://mcr-u15.cz/sitemap.xml
+Sitemap: https://mcr-u17.cz/sitemap.xml
