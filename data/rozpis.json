@@ -1,17 +1,17 @@
 {
-  "updated": "2026-03-21T19:50:00+01:00",
+  "updated": "2026-03-27T10:00:00+01:00",
   "patek": [
-    { "id": "G01", "cas": "11:00", "hala": "A", "zapas": "A1 – B4", "skupina": "Předkolo Play-off", "tvcom": "https://tvcom.cz" },
-    { "id": "G02", "cas": "13:15", "hala": "A", "zapas": "A2 – B3", "skupina": "Předkolo Play-off", "tvcom": "https://tvcom.cz" },
-    { "id": "G03", "cas": "15:30", "hala": "A", "zapas": "A3 – B2", "skupina": "Předkolo Play-off", "tvcom": "https://tvcom.cz" },
+    { "id": "G01", "cas": "11:00", "hala": "A", "zapas": "1 – 8", "skupina": "Předkolo Play-off", "tvcom": "https://tvcom.cz" },
+    { "id": "G02", "cas": "13:15", "hala": "A", "zapas": "4 – 5", "skupina": "Předkolo Play-off", "tvcom": "https://tvcom.cz" },
+    { "id": "G03", "cas": "15:30", "hala": "A", "zapas": "2 – 7", "skupina": "Předkolo Play-off", "tvcom": "https://tvcom.cz" },
     { "id": "CER1", "cas": "17:15", "hala": "A", "zapas": "Zahájení MČR U17", "skupina": "Ceremoniál", "type": "ceremony" },
-    { "id": "G04", "cas": "18:00", "hala": "A", "zapas": "A4 – B1", "skupina": "Předkolo Play-off", "tvcom": "https://tvcom.cz" }
+    { "id": "G04", "cas": "18:00", "hala": "A", "zapas": "3 – 6", "skupina": "Předkolo Play-off", "tvcom": "https://tvcom.cz" }
   ],
   "sobota": [
-    { "id": "P1", "cas": "10:00", "hala": "A", "faze": "Prohrávající", "zapas": "L G01 – L G03", "skupina": "Play-off", "tvcom": "https://tvcom.cz" },
-    { "id": "P2", "cas": "12:15", "hala": "A", "faze": "Prohrávající", "zapas": "L G02 – L G04", "skupina": "Play-off", "tvcom": "https://tvcom.cz" },
-    { "id": "V1", "cas": "14:30", "hala": "A", "faze": "Vítězové", "zapas": "W G01 – W G03", "skupina": "Play-off", "tvcom": "https://tvcom.cz" },
-    { "id": "V2", "cas": "16:45", "hala": "A", "faze": "Vítězové", "zapas": "W G02 – W G04", "skupina": "Play-off", "tvcom": "https://tvcom.cz" }
+    { "id": "P1", "cas": "10:00", "hala": "A", "faze": "Prohrávající", "zapas": "L G01 – L G02", "skupina": "Play-off", "tvcom": "https://tvcom.cz" },
+    { "id": "P2", "cas": "12:15", "hala": "A", "faze": "Prohrávající", "zapas": "L G03 – L G04", "skupina": "Play-off", "tvcom": "https://tvcom.cz" },
+    { "id": "V1", "cas": "14:30", "hala": "A", "faze": "Vítězové", "zapas": "W G01 – W G02", "skupina": "Play-off", "tvcom": "https://tvcom.cz" },
+    { "id": "V2", "cas": "16:45", "hala": "A", "faze": "Vítězové", "zapas": "W G03 – W G04", "skupina": "Play-off", "tvcom": "https://tvcom.cz" }
   ],
   "nedele": [
     { "id": "M7", "cas": "08:30", "hala": "A", "faze": "O 7. místo", "zapas": "L P1 – L P2", "tvcom": "https://tvcom.cz" },
