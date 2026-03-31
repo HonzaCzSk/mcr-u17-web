@@ -34,7 +34,7 @@ function groupTeams(teams) {
     map.get(g).push(t);
   }
   for (const [g, arr] of map) {
-    arr.sort((a, b) => String(a.seed || "").localeCompare(String(b.seed || ""), "cs"));
+    arr.sort((a, b) => (parseInt(a.seed) || 999) - (parseInt(b.seed) || 999));
   }
   return map;
 }
@@ -146,7 +146,7 @@ function renderTeams(root, teams) {
   const sorted = [...teams].sort((a, b) => {
     const ga = String(a.group), gb = String(b.group);
     if (ga !== gb) return ga.localeCompare(gb, "cs");
-    return String(a.seed).localeCompare(String(b.seed), "cs");
+    return (parseInt(a.seed) || 999) - (parseInt(b.seed) || 999);
   });
 
   root.innerHTML = sorted.map(t => {

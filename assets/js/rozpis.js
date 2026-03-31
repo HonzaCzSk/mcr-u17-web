@@ -36,8 +36,8 @@ let DEBUG_TIME = null;
 const LS_KEY = "mcr_u15_rozpis_cache_v1";
 let originalData = null;
 let currentFilter = ""; // "" = Všechny týmy
-const TEAM_FILTER_KEY = "mcr_u15_team_filter_v1";
-const CHANGES_KEY = "mcr_u15_rozpis_time_changes_v1";
+const TEAM_FILTER_KEY = "mcr_u17_team_filter_v1";
+const CHANGES_KEY = "mcr_u17_rozpis_time_changes_v1";
   const TEAM_IGNORE_PREFIXES = [
   "Vítěz",
   "Poražený",
@@ -386,7 +386,6 @@ const fillTable = (tableId, rows, renderRow, focusId) => {
     if (r?.type === "ceremony") {
       return `
         <td>${r.cas ?? "—"}</td>
-        <td>—</td>
         <td colspan="4" class="ceremony-row">🏅 ${escapeHtml(r.zapas)}</td>
       `;
     }
@@ -436,7 +435,6 @@ const fillTable = (tableId, rows, renderRow, focusId) => {
     if (r?.type === "ceremony") {
       return `
         <td>${r.cas ?? "—"}</td>
-        <td>—</td>
         <td colspan="5" class="ceremony-row">🏅 ${escapeHtml(r.zapas)}</td>
       `;
     }

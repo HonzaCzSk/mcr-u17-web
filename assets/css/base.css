@@ -776,13 +776,7 @@ table.schedule td.col-links {
   flex-direction: column;
   gap: 18px;
 }
-.footer__bar{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 14px;
-  flex-wrap: nowrap;
-}
+
 .footer__left{
   font-size: 13px;
   font-weight: 650;
@@ -891,15 +885,16 @@ table.schedule td.col-links {
   object-fit: contain;
   display:block;
 }
+
 .socialbtn--tvcom img{ opacity: .95; }
 
 /* ===== FOOTER FIX (force layout) ===== */
 .footer__bar{
-  display: flex !important;
-  align-items: center !important;
-  justify-content: space-between !important;
-  flex-wrap: nowrap !important;   /* <- tohle je klíč */
-  gap: 14px !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: nowrap;
 }
 
 .footer__left{
@@ -1044,7 +1039,7 @@ table.schedule.results td.score .qgrid td{
 
 /* =========================
    TEAMS – ACCORDION BUTTON VOL. 2
-   =========================
+   ========================= */
 
 .team__head{
   display:flex;
@@ -1089,8 +1084,6 @@ table.schedule.results td.score .qgrid td{
 .team__toggle-text{
   white-space: nowrap;
 }
-
-/* Dark mode
 
 /* ----- Rozpis: filtr týmů ----- */
 .filters{
@@ -1260,7 +1253,7 @@ table.schedule:not(.results) tr.is-live td:first-child{
 }
 
 table.schedule.results tr.is-live td:first-child::after{
-  content: none !important;
+  content: none;
 }
 
 @keyframes livePulse{
@@ -1330,14 +1323,14 @@ table.schedule:not(.results) tbody tr.is-next{
 #tbl-rozpis-patek col:first-child,
 #tbl-rozpis-sobota col:first-child,
 #tbl-rozpis-nedele col:first-child{
-  width: 130px !important;
+  width: 130px;
 }
 
 /* Rozpis: nikdy nebliká (jen výsledky můžou) */
 #tbl-rozpis-patek tr.is-live,
 #tbl-rozpis-sobota tr.is-live,
 #tbl-rozpis-nedele tr.is-live{
-  animation: none !important;
+  animation: none;
 }
 
 table.schedule:not(.results) tbody tr.is-live{
@@ -1982,14 +1975,6 @@ table.schedule .score-main {
   color: inherit;
 }
 
-.game .winner{
-  color: var(--accent);
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
-
-
-
 .game .score{
   text-align: right;
   font-weight: 900;
@@ -2035,13 +2020,6 @@ table.schedule .score-main {
   margin-top: 8px;
   font-weight: 900;
   opacity: .9;
-}
-
-/* winner highlight */
-.game .winner{
-  color: var(--accent);
-  text-decoration: underline;
-  text-underline-offset: 3px;
 }
 
 /* jemné zvýraznění odehraného zápasu */
@@ -2339,16 +2317,6 @@ table.schedule.results .quarters td {
   text-overflow: ellipsis;
 }
 
-/* Winner – čitelný highlight (ne underline) */
-.game .winner{
-  color: #0b0b0e;
-  text-decoration: none;
-  background: rgba(255,59,48,.18);
-  border: 1px solid rgba(255,59,48,.35);
-  padding: 3px 8px;
-  border-radius: 999px;
-}
-
 /* Score jako badge */
 .game .score{
   grid-column: 2;
@@ -2381,6 +2349,7 @@ table.schedule.results .quarters td {
 
 /* vítěz: “badge” + trofej + výraznější */
 .game .winner{
+  color: var(--ink);
   position: relative;
   display: inline-flex;
   align-items: center;
@@ -2389,6 +2358,7 @@ table.schedule.results .quarters td {
   background: rgba(255,59,48,.22);
   border: 1px solid rgba(255,59,48,.55);
   box-shadow: 0 8px 18px rgba(255,59,48,.18);
+  text-decoration: none;
 
   padding: 4px 10px 4px 8px;
   border-radius: 999px;
@@ -2397,20 +2367,15 @@ table.schedule.results .quarters td {
   opacity: 1;
 }
 
-/* trofej vlevo */
-.game .winner::before{
-  content: "🏆";
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 22px;
-  height: 22px;
-  border-radius: 999px;
-  background: rgba(255,59,48,.25);
-  border: 1px solid rgba(255,59,48,.45);
-  font-size: 13px;
-  line-height: 1;
-}
+/* winner: žádný červený border, žádná “pilulka”, žádný emoji
+.game .winner{
+  border: none;
+  background: none;
+  box-shadow: none;
+  text-decoration: none;
+
+}*/
+
 
 /* =========================
    PLAY-OFF – center the FINAL column
@@ -2442,20 +2407,6 @@ table.schedule.results .quarters td {
   font-weight: 800;
 }
 
-/* winner: žádný červený border, žádná “pilulka”, žádný emoji */
-.game .winner{
-  position: relative;
-  display: inline-block;
-  padding: 2px 0 2px 12px;   /* místo pro akcent */
-  border: none !important;
-  background: none !important;
-  box-shadow: none !important;
-  text-decoration: none !important;
-
-  font-weight: 950;
-  color: var(--ink);
-  opacity: 1;
-}
 
 /* levý akcent pruh */
 .game .winner::before{
@@ -2509,12 +2460,16 @@ table.schedule.results .quarters td {
 
 /* 1) ZRUŠIT všechny staré efekty, co sis tam nasčítal */
 .playoff-grid .teamname.winner{
-  background: transparent !important;
-  border: 0 !important;
-  box-shadow: none !important;
-  text-decoration: none !important;
-  padding: 0 !important;
-  border-radius: 0 !important;
+  color: var(--ink);
+  position: relative;
+  font-weight: 950;
+  background: transparent;
+  border: 0;
+  box-shadow: inset 6px 0 0 var(--accent);
+  text-decoration: none;
+  padding: 0;
+  border-radius: 0;
+  padding-left: 12px; /* místo pro pruh */
 }
 
 /* kill pseudo-ikony / badge */
@@ -2525,22 +2480,9 @@ table.schedule.results .quarters td {
 
 /* kill background na řádku (to dělalo tu hnědou “pilulu” přes půlku) */
 .playoff-grid .teamline{
-  background: transparent !important;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-}
-
-/* 2) Winner highlight – jednoduchý a čitelný */
-.playoff-grid .teamname.winner{
-  position: relative;
-  font-weight: 950 !important;
-  color: var(--ink) !important;
-  padding-left: 12px !important; /* místo pro pruh */
-}
-
-/* levý akcent pruh */
-.playoff-grid .teamname.winner{
-  box-shadow: inset 6px 0 0 var(--accent);
+  background: transparent;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 /* poražené lehce stáhnout, ale ne zabít */
@@ -2586,13 +2528,7 @@ table.schedule.results .quarters td {
   font-weight: 800;
 }
 
-/* 3) Zrušit jakékoliv staré “badge/emoji/W” věci, co tam zůstaly */
-.playoff-grid .teamname.winner{
-  background: transparent !important;
-  border: 0 !important;
-  box-shadow: none !important;
-  text-decoration: none !important;
-}
+
 .playoff-grid .teamname.winner::after{ content: none !important; }
 
 /* 4) Trofej jen pro vítěze ve FINÁLE */
@@ -3194,10 +3130,17 @@ h1.h1 {
 }
 
 .team-info__logo img{
+  width: 50%;
+  height: 50%;
+  object-fit: contain;
+}
+
+.team-info__logo img{
   width: 72px;
   height: 72px;
   border-radius: 16px;
-  object-fit: cover;
+  object-fit: contain;
+  padding: 5px;
   border: 1px solid rgba(255,255,255,.12);
   background: rgba(255,255,255,.03);
 }
@@ -3605,9 +3548,9 @@ table.schedule:not(.results) tr.is-live td.score::before{
 
 /* Výsledky: žádná blikající tečka u skóre */
 table.schedule.results tr.is-live td.score::before{
-  content: none !important;
-  display: none !important;
-  animation: none !important;
+  content: none;
+  display: none;
+  animation: none;
 }
 
 /* spacing – safe globally */

@@ -2,7 +2,7 @@
 import { loadTeams, teamHrefById } from "./teams-store.js";
 
 const VYSLEDKY_URL = new URL("../../data/vysledky.json", import.meta.url).toString();
-const LS_VYSLEDKY_KEY = "mcr_u15_vysledky_cache_v1";
+const LS_VYSLEDKY_KEY = "mcr_u17_vysledky_cache_v1";
 
 // Game IDs that count for standings (QF matches only)
 const STANDINGS_GAME_IDS = ["G01", "G02", "G03", "G04"];
@@ -47,7 +47,7 @@ function renderTable(tableEl, teams, statsMap) {
     const b = statsMap.get(tb.name) || initTeam(tb.name);
     if (b.V !== a.V) return b.V - a.V;
     if (a.P !== b.P) return a.P - b.P;
-    return ta.name.localeCompare(tb.name, "cs");
+    return (parseInt(ta.seed) || 999) - (parseInt(tb.seed) || 999);
   });
 
   const rows = sorted.map((team, idx) => {
