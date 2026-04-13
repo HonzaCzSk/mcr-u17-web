@@ -8,7 +8,7 @@
   <meta name="robots" content="index, follow">
 
   <title>Rozpis | MČR U17 – dívky</title>
-  <meta name="description" content="Rozpis zápasů MČR U17 dívek v basketbalu (1.–3. května, Hradec Králové).">
+  <meta name="description" content="Rozpis zápasů MČR U17 dívek v basketbalu (24.–26. dubna, Hradec Králové).">
 
   <link rel="canonical" href="https://www.mcr-U17.cz/pages/rozpis.html">
 
@@ -16,21 +16,21 @@
   <meta property="og:type" content="website">
   <meta property="og:locale" content="cs_CZ">
   <meta property="og:title" content="Rozpis | MČR U17 – dívky">
-  <meta property="og:description" content="Rozpis zápasů MČR U17 dívek v basketbalu (1.–3. května, Hradec Králové).">
+  <meta property="og:description" content="Rozpis zápasů MČR U17 dívek v basketbalu (24.–26. dubna, Hradec Králové).">
   <meta property="og:url" content="https://www.mcr-U17.cz/pages/rozpis.html">
   <meta property="og:site_name" content="MČR U17 – dívky">
   <meta property="og:image" content="https://www.mcr-U17.cz/og-image.jpg">
 
   <!-- Favicons -->
   <link rel="icon" href="../assets/img/favicon.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon-16x16.png">
-  <link rel="manifest" href="../assets/img/site.webmanifest">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/apple-touch-icon.png">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/screen.css" media="screen">
   <link rel="stylesheet" href="../assets/css/dark.css">
   <link rel="stylesheet" href="../assets/css/print.css" media="print">
+  <link rel="stylesheet" href="../assets/css/preferences.css">
 </head>
 
 <body>
@@ -103,8 +103,7 @@
   <main class="wrap">
 
 <section class="pagehead">
-  <h1 class="h1">Rozpis utkání</h1>
-  <p class="lead">1. až 3. května • Hradec Králové</p>
+  <h1 class="h1">Rozpis zápasů</h1>
 
   <div class="cta">
     <a class="btn btn--primary" href="https://www.tvcom.cz/" target="_blank" rel="noopener">Sledovat stream (TVcom)</a>
@@ -113,8 +112,8 @@
 
   <p class="mini">Poslední aktualizace: <strong id="updated">—</strong></p>
 
-      <div class="filters" id="scheduleFilters">
-    <label class="filters__label" for="teamFilter">Tým</label> 
+  <div class="filters" id="scheduleFilters">
+    <label class="filters__label" for="teamFilter">Tým</label>
 
     <select id="teamFilter" class="filters__select">
       <option value="">Všechny týmy</option>
@@ -151,13 +150,15 @@
 </section>
 
 <!-- Pátek -->
-<section class="card" data-day="patek" data-date="2026-05-01">
-  <h2 class="h2" data-print-title="Pátek 1. května">Pátek 1. května – skupiny</h2>
+<section class="card" data-day="patek" data-date="2026-04-24">
+  <h2 class="h2" data-print-title="Pátek 24. dubna">Pátek 24. dubna – skupiny</h2>
 
   <div class="tablewrap">
     <table class="schedule" id="tbl-rozpis-patek">
       <colgroup>
+        <col class="col-id" style="width: 60px;">
         <col class="col-time" style="width: 130px;">
+
         <col class="col-hall" style="width: 140px;">
         <col class="col-match">
         <col class="col-group" style="width: 300px;">
@@ -166,13 +167,16 @@
       </colgroup>
       <thead>
         <tr>
+          <th>ID</th>
           <th>Čas</th>
-          <th>Hala</th>
+          <th class="col-hall">Hala</th>
           <th>Zápas</th>
           <th>Skupina</th>
           <th class="col-links">Odkazy</th>
           <th class="col-score">Skóre</th>
         </tr>
+</xai:function_call name="edit_file">
+<parameter name="path">
       </thead>
       <tbody></tbody>
     </table>
@@ -180,13 +184,15 @@
 </section>
 
 <!-- Sobota -->
-<section class="card" data-day="sobota"  data-date="2026-05-02">
-  <h2 class="h2" data-print-title="Sobota 2. května">Sobota 2. května – skupiny</h2>
+<section class="card" data-day="sobota"  data-date="2026-04-25">
+  <h2 class="h2" data-print-title="Sobota 25. dubna">Sobota 25. dubna – skupiny</h2>
 
   <div class="tablewrap">
     <table class="schedule" id="tbl-rozpis-sobota">
       <colgroup>
+        <col class="col-id" style="width: 60px;">
         <col class="col-time" style="width: 130px;">
+
         <col class="col-hall" style="width: 140px;">
         <col class="col-match">
         <col class="col-group" style="width: 300px;">
@@ -195,13 +201,15 @@
       </colgroup>
       <thead>
         <tr>
+          <th>ID</th>
           <th>Čas</th>
-          <th>Hala</th>
+          <th class="col-hall">Hala</th>
           <th>Zápas</th>
           <th>Skupina</th>
           <th class="col-links">Odkazy</th>
           <th class="col-score">Skóre</th>
         </tr>
+
       </thead>
       <tbody></tbody>
     </table>
@@ -209,17 +217,15 @@
 </section>
 
 <!-- Neděle -->
-<section class="card" data-day="nedele" data-date="2026-05-03">
-  <h2 class="h2" data-print-title="Neděle 3. května">Neděle 3. května – play-off</h2>
-
-  <p class="muted">
-    Play-off rozpis se doplní podle pořadí ve skupinách. Jakmile budou známé výsledky, přidáme konkrétní zápasy.
-  </p>
+<section class="card" data-day="nedele" data-date="2026-04-26">
+  <h2 class="h2" data-print-title="Neděle 26. dubna">Neděle 26. dubna – play-off</h2>
 
   <div class="tablewrap" style="margin-top:12px;">
     <table class="schedule" id="tbl-rozpis-nedele">
       <colgroup>
+        <col class="col-id" style="width: 60px;">
         <col class="col-time" style="width: 130px;">
+
         <col class="col-hall" style="width: 140px;">
         <col class="col-match">
         <col class="col-group" style="width: 300px;">
@@ -228,13 +234,15 @@
       </colgroup>
       <thead>
         <tr>
+          <th>ID</th>
           <th>Čas</th>
-          <th>Hala</th>
+          <th class="col-hall">Hala</th>
           <th>Fáze</th>
           <th>Zápas</th>
           <th class="col-links">Odkazy</th>
           <th class="col-score">Skóre</th>
         </tr>
+
       </thead>
       <tbody></tbody>
     </table>
@@ -255,8 +263,25 @@
     <img src="../assets/img/partners/logo-ceps.svg" alt="ČEPS" loading="lazy">
   </a>
 </div>
- 
-<div class="partners__section-label" style="margin-top:14px;">Partneři</div>
+
+<div class="partners__general-label" style="margin-top:14px;">Hlavní Partner</div>
+<div class="partners__general">
+  <a class="partner" href="" target="_blank" rel="noopener" aria-label="PEAK">
+    <img src="../assets/img/partners/logo-peak.avif" alt=PEAK" loading="lazy">
+  </a>
+</div>
+
+<div class="partners__general-label" style="margin-top:14px;">Partneři</div>
+<div class="partners__general">
+  <a class="partner" href="https://www.basketking.cz/" target="_blank" rel="noopener" aria-label="Basketking.cz">
+    <img src="../assets/img/partners/logo-basketking.webp" alt="Basketking.cz" loading="lazy">
+  </a>
+  <a class="partner" href="https://www.crystal-bohemia.com/en" target="_blank" rel="noopener" aria-label="Crystal Bohemia">
+    <img src="../assets/img/partners/logo-crystalBohemia.png" alt="Crystal Bohemia" loading="lazy">
+  </a>
+</div>
+
+<div class="partners__general-label" style="margin-top:14px;">Partneři turnaje</div>
 <div class="partners__row">
   <a class="partner" href="https://www.hradeckralove.org" target="_blank" rel="noopener" aria-label="Statutární město Hradec Králové">
     <img src="../assets/img/partners/logo-hk-black.png" alt="Statutární město Hradec Králové" loading="lazy">
@@ -277,7 +302,7 @@
       <div class="footer__left">© MČR U17 – Hradec Králové</div>
 
       <div class="socialbar" aria-label="Odkazy">
-        <a class="socialbtn" href="https://www.instagram.com/mcru15.cz/" target="_blank" rel="noopener" aria-label="Instagram">
+        <a class="socialbtn" href="https://www.instagram.com/mcrU17.cz/" target="_blank" rel="noopener" aria-label="Instagram">
           <img src="../assets/img/social/instagram.svg" onerror="this.style.display='none'" alt="Instagram">
         </a>
         <a class="socialbtn socialbtn--tvcom" href="https://www.tvcom.cz/" target="_blank" rel="noopener" aria-label="TVcom">
@@ -291,12 +316,13 @@
         </a>
       </div>
     </div>
-
   </div>
 </footer>
 
   <script type="module" src="../assets/js/rozpis.js"></script>
   <script src="../assets/js/theme.js"></script>
   <script src="../assets/js/menu.js"></script>
+  <script src="../assets/js/preferences.js"></script>
+
 </body>
 </html>

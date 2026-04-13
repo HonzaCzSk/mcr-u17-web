@@ -251,6 +251,7 @@ body > main {
   border: 1px solid var(--line);
   border-radius: var(--r-md);
   padding: 14px;
+  justify-items: center;
 }
 .panel__title{
   font-weight: 950;
@@ -459,8 +460,23 @@ body > main {
   letter-spacing: .3px;
 }
 .badge--fin{
-  border-color: rgba(0,0,0,.18);
-  background: rgba(0,0,0,.06);
+  border-color: rgba(34,197,94,.35);
+  background: rgba(34,197,94,.12);
+  color: #16a34a;
+}
+
+[data-theme="dark"] .badge--fin{
+  border-color: rgba(34,197,94,.3);
+  background: rgba(34,197,94,.1);
+  color: #4ade80;
+}
+
+tr.is-fin {
+  background: rgba(34,197,94,.06);
+}
+
+table.schedule.results tr.is-fin {
+  background: rgba(34,197,94,.06);
 }
 .badge--live{
   border-color: rgba(255,59,48,.35);
@@ -555,7 +571,7 @@ table.schedule td.col-time {
 /* HALA – u kraje, centrovaná */
 table.schedule th.col-hall,
 table.schedule td.col-hall {
-  text-align: center;
+  text-align: center !important;
 }
 
 /* ZÁPAS – hlavní obsah, vlevo */
@@ -776,7 +792,13 @@ table.schedule td.col-links {
   flex-direction: column;
   gap: 18px;
 }
-
+.footer__bar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: nowrap;
+}
 .footer__left{
   font-size: 13px;
   font-weight: 650;
@@ -792,7 +814,7 @@ table.schedule td.col-links {
   font-weight: 950;
   text-transform: uppercase;
   letter-spacing: .4px;
-  font-size: 13px;
+  font-size: 15px;
 }
 .partners__row{
   display:grid;
@@ -802,6 +824,7 @@ table.schedule td.col-links {
 
 /* Generální partner – celá šířka */
 .partners__general {
+  gap: 12px;
   display: flex;
   justify-content: center;
 }
@@ -885,16 +908,15 @@ table.schedule td.col-links {
   object-fit: contain;
   display:block;
 }
-
 .socialbtn--tvcom img{ opacity: .95; }
 
 /* ===== FOOTER FIX (force layout) ===== */
 .footer__bar{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 14px;
-  flex-wrap: nowrap;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  flex-wrap: nowrap !important;   /* <- tohle je klíč */
+  gap: 14px !important;
 }
 
 .footer__left{
@@ -1039,7 +1061,7 @@ table.schedule.results td.score .qgrid td{
 
 /* =========================
    TEAMS – ACCORDION BUTTON VOL. 2
-   ========================= */
+   =========================
 
 .team__head{
   display:flex;
@@ -1084,6 +1106,8 @@ table.schedule.results td.score .qgrid td{
 .team__toggle-text{
   white-space: nowrap;
 }
+
+/* Dark mode
 
 /* ----- Rozpis: filtr týmů ----- */
 .filters{
@@ -1253,7 +1277,7 @@ table.schedule:not(.results) tr.is-live td:first-child{
 }
 
 table.schedule.results tr.is-live td:first-child::after{
-  content: none;
+  content: none !important;
 }
 
 @keyframes livePulse{
@@ -1323,14 +1347,14 @@ table.schedule:not(.results) tbody tr.is-next{
 #tbl-rozpis-patek col:first-child,
 #tbl-rozpis-sobota col:first-child,
 #tbl-rozpis-nedele col:first-child{
-  width: 130px;
+  width: 130px !important;
 }
 
 /* Rozpis: nikdy nebliká (jen výsledky můžou) */
 #tbl-rozpis-patek tr.is-live,
 #tbl-rozpis-sobota tr.is-live,
 #tbl-rozpis-nedele tr.is-live{
-  animation: none;
+  animation: none !important;
 }
 
 table.schedule:not(.results) tbody tr.is-live{
@@ -1827,18 +1851,13 @@ table.schedule td:last-child {
 /* ZÁPAS – vždy vlevo */
 table.schedule th:nth-child(3),
 table.schedule td:nth-child(3) {
-  text-align: left;
+  text-align: center;
 }
 
 /* ===== SKÓRE (VÝSLEDKY) ===== */
 
 /* hlavička SKÓRE */
 table.schedule.results th:nth-child(4) {
-  text-align: center;
-}
-
-/* buňka skóre */
-table.schedule.results td:nth-child(4) {
   text-align: center;
 }
 
@@ -1975,6 +1994,14 @@ table.schedule .score-main {
   color: inherit;
 }
 
+.game .winner{
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+
+
 .game .score{
   text-align: right;
   font-weight: 900;
@@ -2020,6 +2047,13 @@ table.schedule .score-main {
   margin-top: 8px;
   font-weight: 900;
   opacity: .9;
+}
+
+/* winner highlight */
+.game .winner{
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 /* jemné zvýraznění odehraného zápasu */
@@ -2317,6 +2351,16 @@ table.schedule.results .quarters td {
   text-overflow: ellipsis;
 }
 
+/* Winner – čitelný highlight (ne underline) */
+.game .winner{
+  color: #0b0b0e;
+  text-decoration: none;
+  background: rgba(255,59,48,.18);
+  border: 1px solid rgba(255,59,48,.35);
+  padding: 3px 8px;
+  border-radius: 999px;
+}
+
 /* Score jako badge */
 .game .score{
   grid-column: 2;
@@ -2349,7 +2393,6 @@ table.schedule.results .quarters td {
 
 /* vítěz: “badge” + trofej + výraznější */
 .game .winner{
-  color: var(--ink);
   position: relative;
   display: inline-flex;
   align-items: center;
@@ -2358,7 +2401,6 @@ table.schedule.results .quarters td {
   background: rgba(255,59,48,.22);
   border: 1px solid rgba(255,59,48,.55);
   box-shadow: 0 8px 18px rgba(255,59,48,.18);
-  text-decoration: none;
 
   padding: 4px 10px 4px 8px;
   border-radius: 999px;
@@ -2367,15 +2409,20 @@ table.schedule.results .quarters td {
   opacity: 1;
 }
 
-/* winner: žádný červený border, žádná “pilulka”, žádný emoji
-.game .winner{
-  border: none;
-  background: none;
-  box-shadow: none;
-  text-decoration: none;
-
-}*/
-
+/* trofej vlevo */
+.game .winner::before{
+  content: "🏆";
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 999px;
+  background: rgba(255,59,48,.25);
+  border: 1px solid rgba(255,59,48,.45);
+  font-size: 13px;
+  line-height: 1;
+}
 
 /* =========================
    PLAY-OFF – center the FINAL column
@@ -2407,6 +2454,20 @@ table.schedule.results .quarters td {
   font-weight: 800;
 }
 
+/* winner: žádný červený border, žádná “pilulka”, žádný emoji */
+.game .winner{
+  position: relative;
+  display: inline-block;
+  padding: 2px 0 2px 12px;   /* místo pro akcent */
+  border: none !important;
+  background: none !important;
+  box-shadow: none !important;
+  text-decoration: none !important;
+
+  font-weight: 950;
+  color: var(--ink);
+  opacity: 1;
+}
 
 /* levý akcent pruh */
 .game .winner::before{
@@ -2460,16 +2521,12 @@ table.schedule.results .quarters td {
 
 /* 1) ZRUŠIT všechny staré efekty, co sis tam nasčítal */
 .playoff-grid .teamname.winner{
-  color: var(--ink);
-  position: relative;
-  font-weight: 950;
-  background: transparent;
-  border: 0;
-  box-shadow: inset 6px 0 0 var(--accent);
-  text-decoration: none;
-  padding: 0;
-  border-radius: 0;
-  padding-left: 12px; /* místo pro pruh */
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  text-decoration: none !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
 }
 
 /* kill pseudo-ikony / badge */
@@ -2480,9 +2537,22 @@ table.schedule.results .quarters td {
 
 /* kill background na řádku (to dělalo tu hnědou “pilulu” přes půlku) */
 .playoff-grid .teamline{
-  background: transparent;
-  padding-left: 0;
-  padding-right: 0;
+  background: transparent !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* 2) Winner highlight – jednoduchý a čitelný */
+.playoff-grid .teamname.winner{
+  position: relative;
+  font-weight: 950 !important;
+  color: var(--ink) !important;
+  padding-left: 12px !important; /* místo pro pruh */
+}
+
+/* levý akcent pruh */
+.playoff-grid .teamname.winner{
+  box-shadow: inset 6px 0 0 var(--accent);
 }
 
 /* poražené lehce stáhnout, ale ne zabít */
@@ -2528,7 +2598,13 @@ table.schedule.results .quarters td {
   font-weight: 800;
 }
 
-
+/* 3) Zrušit jakékoliv staré “badge/emoji/W” věci, co tam zůstaly */
+.playoff-grid .teamname.winner{
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  text-decoration: none !important;
+}
 .playoff-grid .teamname.winner::after{ content: none !important; }
 
 /* 4) Trofej jen pro vítěze ve FINÁLE */
@@ -3130,17 +3206,10 @@ h1.h1 {
 }
 
 .team-info__logo img{
-  width: 50%;
-  height: 50%;
-  object-fit: contain;
-}
-
-.team-info__logo img{
   width: 72px;
   height: 72px;
   border-radius: 16px;
-  object-fit: contain;
-  padding: 5px;
+  object-fit: cover;
   border: 1px solid rgba(255,255,255,.12);
   background: rgba(255,255,255,.03);
 }
@@ -3548,9 +3617,9 @@ table.schedule:not(.results) tr.is-live td.score::before{
 
 /* Výsledky: žádná blikající tečka u skóre */
 table.schedule.results tr.is-live td.score::before{
-  content: none;
-  display: none;
-  animation: none;
+  content: none !important;
+  display: none !important;
+  animation: none !important;
 }
 
 /* spacing – safe globally */
@@ -3647,4 +3716,368 @@ main > section{ margin-bottom: 56px; }
   font-weight: 600;
   color: var(--accent);
   letter-spacing: 0.01em;
+}
+
+.team-photo-drawer {
+  margin-top: 0.75rem;
+  overflow: hidden;
+}
+
+.team-photo-img {
+  width: 100%;
+  max-width: 480px;
+  border-radius: 8px;
+  display: block;
+}
+
+.standings-group {
+  margin-bottom: 2rem;
+}
+
+.standings-group__title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.standings-table {
+  width: 100%;
+}
+
+/* ── Gallery banner (Zonerama) ── */
+.gallery-banner {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.1rem 1.25rem;
+  border-radius: 10px;
+  border: 1px solid var(--c-border, rgba(255,255,255,0.1));
+  background: var(--c-card, rgba(255,255,255,0.04));
+  text-decoration: none;
+  color: inherit;
+  transition: background 0.15s, border-color 0.15s, transform 0.1s;
+}
+
+.gallery-banner:hover {
+  background: var(--c-hover, rgba(255,255,255,0.08));
+  border-color: var(--c-accent, rgba(255,255,255,0.22));
+  transform: translateY(-1px);
+}
+
+.gallery-banner__icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.gallery-banner__body {
+  flex: 1;
+  min-width: 0;
+}
+
+.gallery-banner__title {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.gallery-banner__sub {
+  font-size: 0.8rem;
+  opacity: 0.55;
+  margin-top: 0.15rem;
+}
+
+.gallery-banner__right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.3rem;
+  flex-shrink: 0;
+}
+
+.gallery-banner__tag {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.55rem;
+  border-radius: 99px;
+  border: 1px solid currentColor;
+  opacity: 0.5;
+}
+
+.gallery-banner__arrow {
+  font-size: 1.2rem;
+  opacity: 0.4;
+  transition: opacity 0.15s, transform 0.15s;
+}
+
+.gallery-banner:hover .gallery-banner__arrow {
+  opacity: 1;
+  transform: translateX(3px);
+}
+
+/* ── DARK (default) ── */
+:root,
+[data-theme="dark"] {
+  --st-bg:        #1e1e1e;
+  --st-border:    rgba(255,255,255,0.08);
+  --st-border2:   rgba(255,255,255,0.18);
+  --st-head-bg:   rgba(255,255,255,0.05);
+  --st-muted:     #888;
+  --st-text:      #e8e8e8;
+  --st-hover:     rgba(255,255,255,0.04);
+}
+
+/* ── LIGHT ── */
+[data-theme="light"] {
+  --st-bg:        #ffffff;
+  --st-border:    rgba(0,0,0,0.08);
+  --st-border2:   rgba(0,0,0,0.18);
+  --st-head-bg:   rgba(0,0,0,0.04);
+  --st-muted:     #888;
+  --st-text:      #111;
+  --st-hover:     rgba(0,0,0,0.03);
+}
+
+#standings-groups {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.standings-group {
+  background: var(--st-bg);
+  border: 1px solid var(--st-border);
+  border-radius: 12px;
+  overflow: hidden;
+  color: var(--st-text);
+}
+
+.standings-group__title {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0.7rem 1.25rem;
+  background: var(--st-head-bg);
+  color: var(--st-muted);
+  margin: 0;
+  border-bottom: 1px solid var(--st-border);
+}
+
+.standings-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.standings-table thead th {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--st-muted);
+  padding: 0.55rem 1.25rem;
+  text-align: left;
+  border-bottom: 1px solid var(--st-border);
+}
+
+.standings-table thead th:nth-child(1) { width: 2.5rem; text-align: center; }
+.standings-table thead th:nth-child(3),
+.standings-table thead th:nth-child(4) { text-align: right; }
+
+.standings-table tbody tr {
+  border-bottom: 1px solid var(--st-border);
+  transition: background 0.12s;
+}
+
+.standings-table tbody tr:last-child { border-bottom: none; }
+.standings-table tbody tr:hover { background: var(--st-hover); }
+
+.standings-table tbody td {
+  padding: 0.75rem 1.25rem;
+  font-size: 0.95rem;
+  color: var(--st-text);
+}
+
+.standings-table tbody td:nth-child(1) {
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.82rem;
+  color: var(--st-muted);
+  width: 2.5rem;
+}
+
+.standings-table tbody td:nth-child(3),
+.standings-table tbody td:nth-child(4) {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  color: var(--st-muted);
+  font-size: 0.85rem;
+}
+
+.standings-table .teamlink {
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--st-text);
+}
+
+.standings-table .teamlink:hover { text-decoration: underline; }
+
+/* oddělovač po 2. místě */
+.standings-table tbody tr:nth-child(2) {
+  border-bottom: 2px solid var(--st-border2);
+}
+
+@media (max-width: 600px) {
+  #standings-groups { grid-template-columns: 1fr; }
+}
+
+.plakat-link {
+  margin-top: 15px;
+  display: block;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 260px;
+  border: 1px solid rgba(255,255,255,1);
+}
+
+[data-theme="light"] .plakat-link {
+  border-color: rgba(0,0,0,1);
+}
+
+.plakat-img {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+}
+
+.plakat-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.6rem;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.plakat-link:hover .plakat-overlay {
+  opacity: 1;
+}
+/* ── Legend (stavové pilulky) ── */
+.legend {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin-top: 0.75rem;
+}
+
+.legend__pill {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  border: 1px solid transparent;
+}
+
+.legend__dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.legend__code {
+  font-weight: 800;
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+}
+
+.legend__label {
+  font-weight: 400;
+  opacity: 0.75;
+}
+
+.legend__pill--fin {
+  background: rgba(34, 197, 94, 0.12);
+  border-color: rgba(34, 197, 94, 0.25);
+  color: #16a34a;
+}
+.legend__pill--fin .legend__dot { background: #16a34a; }
+
+.legend__pill--live {
+  background: rgba(239, 68, 68, 0.12);
+  border-color: rgba(239, 68, 68, 0.25);
+  color: #dc2626;
+}
+.legend__pill--live .legend__dot {
+  background: #dc2626;
+  animation: legend-pulse 1.4s infinite;
+}
+
+.legend__pill--scheduled {
+  background: rgba(120, 120, 120, 0.08);
+  border-color: rgba(120, 120, 120, 0.2);
+  color: inherit;
+  opacity: 0.7;
+}
+.legend__pill--scheduled .legend__dot { background: currentColor; }
+
+[data-theme="dark"] .legend__pill--fin {
+  background: rgba(34, 197, 94, 0.1);
+  border-color: rgba(34, 197, 94, 0.2);
+  color: #4ade80;
+}
+[data-theme="dark"] .legend__pill--fin .legend__dot { background: #4ade80; }
+
+[data-theme="dark"] .legend__pill--live {
+  background: rgba(239, 68, 68, 0.1);
+  border-color: rgba(239, 68, 68, 0.2);
+  color: #f87171;
+}
+[data-theme="dark"] .legend__pill--live .legend__dot { background: #f87171; }
+
+@keyframes legend-pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(0.85); }
+}
+/* ── Týmy quick-grid – mobil fix ── */
+.team-quick-name {
+  overflow-wrap: break-word;
+  word-break: break-word;
+  hyphens: auto;
+}
+
+/* Na menších telefonech 1 sloupec vždy */
+@media (max-width: 540px) {
+  .quick-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .team-quick-name {
+    font-size: 15px;
+  }
+}
+
+/* Skupiny vedle sebe jen na desktopu */
+@media (max-width: 768px) {
+  #teams-quick {
+    display: block;
+  }
+
+  .quick-group {
+    margin-bottom: 1rem;
+  }
 }

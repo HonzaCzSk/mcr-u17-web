@@ -26,16 +26,30 @@ openByHash(root);
 window.addEventListener("hashchange", () => openByHash(root));
 });
 
+function seedOrder(seed) {
+  const m = String(seed || "").match(/(\d+)/);
+  return m ? parseInt(m[1], 10) : 999;
+}
+
 function groupTeams(teams) {
   const map = new Map();
-  for (const t of teams) {
+
+  // Seřadit týmy: skupiny A→B, uvnitř skupiny numericky dle seedu
+  const sorted = [...teams].sort((a, b) => {
+    const ga = String(a.group || "—");
+    const gb = String(b.group || "—");
+    if (ga === "—" && gb !== "—") return 1;
+    if (gb === "—" && ga !== "—") return -1;
+    if (ga !== gb) return ga.localeCompare(gb, "cs");
+    return seedOrder(a.seed) - seedOrder(b.seed);
+  });
+
+  for (const t of sorted) {
     const g = t.group || "—";
     if (!map.has(g)) map.set(g, []);
     map.get(g).push(t);
   }
-  for (const [g, arr] of map) {
-    arr.sort((a, b) => (parseInt(a.seed) || 999) - (parseInt(b.seed) || 999));
-  }
+
   return map;
 }
 
@@ -128,7 +142,6 @@ function renderQuickView(container, teams) {
                       <div class="team-quick-name">${escapeHtml(t.name)}</div>
                       <div class="team-quick-meta">
                         ${t.seed ? `<span class="pill">${escapeHtml(t.seed)}</span>` : ""}
-                        ${t.group ? `<span class="pill muted">Skupina ${escapeHtml(t.group)}</span>` : ""}
                       </div>
                     </a>
                   `
@@ -144,9 +157,11 @@ function renderQuickView(container, teams) {
 function renderTeams(root, teams) {
   // seřazení: A1..A4, B1..B4
   const sorted = [...teams].sort((a, b) => {
-    const ga = String(a.group), gb = String(b.group);
+    const ga = String(a.group || "—"), gb = String(b.group || "—");
+    if (ga === "—" && gb !== "—") return 1;
+    if (gb === "—" && ga !== "—") return -1;
     if (ga !== gb) return ga.localeCompare(gb, "cs");
-    return (parseInt(a.seed) || 999) - (parseInt(b.seed) || 999);
+    return seedOrder(a.seed) - seedOrder(b.seed);
   });
 
   root.innerHTML = sorted.map(t => {
@@ -162,7 +177,6 @@ function renderTeams(root, teams) {
 
               <div class="team-meta">
                 ${t.seed ? `<span class="pill">${escapeHtml(t.seed)}</span>` : ""}
-                ${t.group ? `<span class="pill muted">Skupina ${escapeHtml(t.group)}</span>` : ""}
               </div>
             </div>
           <span class="team__chev" aria-hidden="true"></span>
@@ -180,12 +194,15 @@ function renderTeams(root, teams) {
               ${infoRow("Klub", t.club)}
               ${infoRow("Město", t.city)}
               ${infoRow("Trenér/ka", t.coach)}
-              ${infoRow("Asistent/ka", t.assistantCoach)}
+              ${Array.isArray(t.assistantCoaches) && t.assistantCoaches.length
+                ? t.assistantCoaches.map((a, i) => infoRow(i === 0 ? "Asistent/ka" : "Asistent/ka 2", a)).join("")
+                : infoRow("Asistent/ka", t.assistantCoach ?? null)}
             </div>
 
             <div class="team-info__links">
               ${linkBtn("Web", t.website)}
               ${linkBtn("Instagram", t.instagram)}
+              ${linkBtn("Fotografie", t.photo)}
             </div>
             ${t.note ? `<div class="team-info__note">${escapeHtml(t.note)}</div>` : ``}
             ${renderRoster(t.roster)}

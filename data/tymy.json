@@ -6,13 +6,26 @@
     "group": null,
     "city": "Hradec Králové",
     "club": "Sokol Hradec Králové",
-    "coach": null,
-    "assistantCoach": null,
-    "roster": [],
+    "coach": "Ondřej Matýs",
+    "assistantCoach": "Ondřej Borovec",
     "website": "https://hradeckelvice.cz",
+        "roster": [
+      { "no": 4, "name": "Dominika Pencáková", "pos": "F", "year": 2009, "captain": true },
+      { "no": 5, "name": "Emma Černá", "pos": "G", "year": 2010 },
+      { "no": 6, "name": "Viktorie Volejníková", "pos": "G", "year": 2009 },
+      { "no": 7, "name": "Adéla Mlejnková", "pos": "F", "year": 2010 },
+      { "no": 8, "name": "Anna Fejksová", "pos": "C", "year": 2010 },
+      { "no": 9, "name": "Eliška Naarová", "pos": "G", "year": 2009 },
+      { "no": 10, "name": "Viktorie Kučerová", "pos": "F", "year": 2010 },
+      { "no": 13, "name": "Vendula Salaková", "pos": "G", "year": 2010 },
+      { "no": 14, "name": "Klára Šimůnková", "pos": "F", "year": 2010 },
+      { "no": 21, "name": "Julie Přichystalová", "pos": "C", "year": 2009 },
+      { "no": 22, "name": "Aneta Bohuslavová", "pos": "F", "year": 2009 },
+      { "no": 31, "name": "Zuzana Vosková", "pos": "C", "year": 2009 }
+    ],
     "instagram": "https://www.instagram.com/hradeckelvice",
     "logo": "../assets/img/teamLogos/lviceLogo.png",
-    "note": null
+    "note": "Testujeme - soupiska a týmové info bude doplněno před turnajem."
   },
   {
     "id": "usk-praha",
@@ -21,12 +34,26 @@
     "group": null,
     "city": "Praha",
     "club": "USK Praha",
-    "coach": null,
-    "assistantCoach": null,
-    "roster": [],
+    "coach": "Martin Petrovický",
+    "assistantCoach": "Barbora Schambergerová",
+    "roster": [
+      { "no": 2, "name": "Barbora Tejmarová", "position": "", "year": 2011 },
+      { "no": 4, "name": "Sofie Robson", "position": "", "year": 2009 },
+      { "no": 6, "name": "Sára Obadalová", "position": "", "year": 2010 },
+      { "no": 7, "name": "Anežka Misíková", "position": "", "year": 2009 },
+      { "no": 8, "name": "Johana Kvasničková", "position": "", "year": 2009 },
+      { "no": 10, "name": "Sofie Sovová", "position": "", "year": 2011 },
+      { "no": 11, "name": "Barbora Luxová", "position": "", "year": 2009 },
+      { "no": 13, "name": "Mia Bendíková", "position": "", "year": 2011 },
+      { "no": 14, "name": "Tereza Svatoňová", "position": "", "year": 2010 },
+      { "no": 16, "name": "Elen Majcher", "position": "", "year": 2011 },
+      { "no": 17, "name": "Nikola Kaiserová", "position": "", "year": 2010 },
+      { "no": 18, "name": "Ema Bartošová", "position": "", "year": 2009 }
+    ],
     "website": "https://www.uskbasket.cz/",
     "instagram": "https://www.instagram.com/uskmladez/",
     "logo": "../assets/img/teamLogos/USK_Logo.png",
+    "photo": "../../assets/img/teamPhotos/uskPrahaPhoto.JPEG",
     "note": null
   },
   {
@@ -42,7 +69,7 @@
     "website": "https://basketst.cz/",
     "instagram": "https://www.instagram.com/bkstrakonice/",
     "logo": "../assets/img/teamLogos/bkStrakoniceLogo.png",
-    "note": null
+    "note": "Soupiska a týmové info bude doplněno před turnajem."
   },
   {
     "id": "sbs-ostrava",
@@ -57,7 +84,7 @@
     "website": "https://zbl.sbsostrava.cz/",
     "instagram": "https://www.instagram.com/sbsostrava_mladez/",
     "logo": "../assets/img/teamLogos/ostravaLogo.jpg",
-    "note": null
+    "note": "Soupiska a týmové info bude doplněno před turnajem."
   },
   {
     "id": "zabiny-brno",
@@ -66,10 +93,25 @@
     "group": null,
     "city": "Brno",
     "club": "Žabiny Brno",
-    "coach": null,
-    "assistantCoach": null,
-    "roster": [],
+    "coach": "Richard Fousek",
+    "assistantCoach": "Barbora Holubová",
+    "roster": [
+      { "no": 1, "name": "Angela Poláchová", "position": "", "year": 2009 },
+      { "no": 3, "name": "Valerie Špicová", "position": "", "year": 2010 },
+      { "no": 4, "name": "Lucie Brabcová", "position": "", "year": 2009 },
+      { "no": 5, "name": "Michala Ryšánková", "position": "", "year": 2010 },
+      { "no": 6, "name": "Martina Pařízková", "position": "", "year": 2009 },
+      { "no": 11, "name": "Eliška Navrátilová", "position": "", "year": 2010 },
+      { "no": 12, "name": "Olga Josefína Rozsívalová", "position": "", "year": 2010 },
+      { "no": 14, "name": "Kamila Krampolová", "position": "", "year": 2009 },
+      { "no": 18, "name": "Adéla Růžičková", "position": "", "year": 2010 },
+      { "no": 24, "name": "Vendula Lukešová", "position": "", "year": 2009 },
+      { "no": 33, "name": "Vanessa Jurašek", "position": "", "year": 2009 },
+      { "no": 34, "name": "Alexandra Antonická", "position": "", "year": 2010 }
+
+    ],
     "website": "https://www.bkzabiny.cz/",
+    "photo": "../../assets/img/teamPhotos/zabinyBrnoPhoto.JPEG",
     "instagram": "https://www.instagram.com/zabiny_brno_mladez/",
     "logo": "../assets/img/teamLogos/zabinyBrnoLogo.png",
     "note": null
@@ -87,7 +129,7 @@
     "website": "https://www.hbbasket.cz/",
     "instagram": "https://www.instagram.com/hbbasketpraha/",
     "logo": "../assets/img/teamLogos/hbBasketPrahaLogo.png",
-    "note": null
+    "note": "Soupiska a týmové info bude doplněno před turnajem."
   },
   {
     "id": "bk-lvice-litomerice",
@@ -102,7 +144,7 @@
     "website": "https://www.lvicelitomerice.cz/",
     "instagram": "https://www.instagram.com/bklvicelitomerice/",
     "logo": "../assets/img/teamLogos/bkLviceLitomericeLogo.webp",
-    "note": null
+    "note": "Soupiska a týmové info bude doplněno před turnajem."
   },
   {
     "id": "tygri-praha",
@@ -117,6 +159,6 @@
     "website": "https://tygri.eu/",
     "instagram": "https://www.instagram.com/bs_tygri_praha/",
     "logo": "../assets/img/teamLogos/tygriPrahaLogo.png",
-    "note": null
+    "note": "Soupiska a týmové info bude doplněno před turnajem."
   }
 ]

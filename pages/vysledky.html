@@ -6,14 +6,14 @@
   <title>Výsledky | MČR U17 – dívky</title>
   <meta name="description" content="Výsledky a průběh MČR U17 dívek v basketbalu.">
   <link rel="icon" href="../assets/img/favicon.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon-16x16.png">
-  <link rel="manifest" href="../assets/img/site.webmanifest">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/apple-touch-icon.png">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/screen.css" media="screen">
   <link rel="stylesheet" href="../assets/css/dark.css">
   <link rel="stylesheet" href="../assets/css/print.css" media="print">
+  <link rel="stylesheet" href="../assets/css/preferences.css">
 </head>
 
 <body>
@@ -79,12 +79,28 @@
       <h1 class="h1">Výsledky</h1>
       <p class="lead">Průběžně aktualizované výsledky během turnaje.</p>
       <p class="mini">Poslední aktualizace: <strong id="updated">—</strong></p>
-      <p class="mini">Stav zápasu: <span class="badge badge--fin">FIN</span> dohráno, <span class="badge badge--live">LIVE</span> probíhá, <span class="badge">SCHEDULED</span> plán.</p>
+      <div class="legend">
+        <div class="legend__pill legend__pill--fin">
+          <span class="legend__dot"></span>
+          <span class="legend__code">FIN</span>
+          <span class="legend__label">Dohráno</span>
+        </div>
+        <div class="legend__pill legend__pill--live">
+          <span class="legend__dot"></span>
+          <span class="legend__code">LIVE</span>
+          <span class="legend__label">Právě probíhá</span>
+        </div>
+        <div class="legend__pill legend__pill--scheduled">
+          <span class="legend__dot"></span>
+          <span class="legend__code">SCHEDULED</span>
+          <span class="legend__label">Plánováno</span>
+        </div>
+      </div>
     </section>
 
     <!-- Pátek -->
     <section class="card">
-      <h2 class="h2">Pátek 1. května </h2>
+      <h2 class="h2">Pátek 24. dubna</h2>
 
       <div class="tablewrap">
         <table class="schedule results" id="tbl-patek">
@@ -104,7 +120,7 @@
 
 <!-- Sobota -->
 <section class="card">
-  <h2 class="h2">Sobota 2. května</h2>
+  <h2 class="h2">Sobota 25. dubna</h2>
 
   <div class="tablewrap">
     <table class="schedule results" id="tbl-sobota">
@@ -112,7 +128,6 @@
         <tr>
           <th>Čas</th>
           <th>Hala</th>
-          <th>Fáze</th>
           <th>Zápas</th>
           <th>Skóre</th>
           <th>Stav</th>
@@ -126,7 +141,7 @@
 
     <!-- Neděle -->
     <section class="card">
-      <h2 class="h2">Neděle 3. května – Play-off</h2>
+      <h2 class="h2">Neděle 26. dubna</h2>
 
       <div class="tablewrap" style="margin-top:12px;">
         <table class="schedule results" id="tbl-playoff">
@@ -159,8 +174,25 @@
     <img src="../assets/img/partners/logo-ceps.svg" alt="ČEPS" loading="lazy">
   </a>
 </div>
- 
-<div class="partners__section-label" style="margin-top:14px;">Partneři</div>
+
+<div class="partners__general-label" style="margin-top:14px;">Hlavní Partner</div>
+<div class="partners__general">
+  <a class="partner" href="" target="_blank" rel="noopener" aria-label="PEAK">
+    <img src="../assets/img/partners/logo-peak.avif" alt=PEAK" loading="lazy">
+  </a>
+</div>
+
+<div class="partners__general-label" style="margin-top:14px;">Partneři</div>
+<div class="partners__general">
+  <a class="partner" href="https://www.basketking.cz/" target="_blank" rel="noopener" aria-label="Basketking.cz">
+    <img src="../assets/img/partners/logo-basketking.webp" alt="Basketking.cz" loading="lazy">
+  </a>
+  <a class="partner" href="https://www.crystal-bohemia.com/en" target="_blank" rel="noopener" aria-label="Crystal Bohemia">
+    <img src="../assets/img/partners/logo-crystalBohemia.png" alt="Crystal Bohemia" loading="lazy">
+  </a>
+</div>
+
+<div class="partners__general-label" style="margin-top:14px;">Partneři turnaje</div>
 <div class="partners__row">
   <a class="partner" href="https://www.hradeckralove.org" target="_blank" rel="noopener" aria-label="Statutární město Hradec Králové">
     <img src="../assets/img/partners/logo-hk-black.png" alt="Statutární město Hradec Králové" loading="lazy">
@@ -181,7 +213,7 @@
       <div class="footer__left">© MČR U17 – Hradec Králové</div>
 
       <div class="socialbar" aria-label="Odkazy">
-        <a class="socialbtn" href="https://www.instagram.com/mcru15.cz/" target="_blank" rel="noopener" aria-label="Instagram">
+        <a class="socialbtn" href="https://www.instagram.com/mcrU17.cz/" target="_blank" rel="noopener" aria-label="Instagram">
           <img src="../assets/img/social/instagram.svg" onerror="this.style.display='none'" alt="Instagram">
         </a>
         <a class="socialbtn socialbtn--tvcom" href="https://www.tvcom.cz/" target="_blank" rel="noopener" aria-label="TVcom">
@@ -195,13 +227,13 @@
         </a>
       </div>
     </div>
-
   </div>
 </footer>
 
 <script type="module" src="../assets/js/vysledky.js"></script>
 <script src="../assets/js/theme.js"></script>
 <script src="../assets/js/menu.js"></script>
+<script src="../assets/js/preferences.js"></script>
 
 </body>
 </html>
