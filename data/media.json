@@ -11,19 +11,19 @@
 
   "days": [
     {
-      "label": "Pátek 24. 4.",
+      "label": "Pátek 1. 5.",
       "links": [
         { "title": "Galerie – pátek", "url": "https://zonerama.com/patek" }
       ]
     },
     {
-      "label": "Sobota 25. 4.",
+      "label": "Sobota 2. 5.",
       "links": [
         { "title": "Galerie – sobota", "url": "https://zonerama.com/sobota" }
       ]
     },
     {
-      "label": "Neděle 26. 4.",
+      "label": "Neděle 3. 5.",
       "links": [
         { "title": "Galerie – neděle", "url": "https://zonerama.com/nedele" }
       ]

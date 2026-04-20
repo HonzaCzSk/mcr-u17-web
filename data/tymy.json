@@ -78,13 +78,27 @@
     "group": null,
     "city": "Ostrava",
     "club": "SBŠ Ostrava",
-    "coach": null,
-    "assistantCoach": null,
-    "roster": [],
+    "coach": "Michal Černík",
+    "assistantCoaches": ["Marek Volný", "Kamil Fajta"],
+    "roster": [
+      { "no": 1, "name": "Bára Chrapková", "position": "", "year": 2010 },
+      { "no": 3, "name": "Valerie Vaňková", "position": "", "year": 2009 },
+      { "no": 4, "name": "Anežka Zapletalová", "position": "", "year": 2009 },
+      { "no": 9, "name": "Adéla Kutrová", "position": "", "year": 2009 },
+      { "no": 18, "name": "Lucie Pavlíková", "position": "", "year": 2009 },
+      { "no": 25, "name": "Klára Zvolánková", "position": "", "year": 2009 },
+      { "no": 26, "name": "Stella Výrková", "position": "", "year": 2010 },
+      { "no": 30, "name": "Timea Tsameti", "position": "", "year": 2010 },
+      { "no": 35, "name": "Anna Červená", "position": "", "year": 2009 },
+      { "no": 85, "name": "Natálie Outratová", "position": "", "year": 2010 },
+      { "no": 97, "name": "Adéla Úlehlová", "position": "", "year": 2009 },
+      { "no": 99, "name": "Sofie Lysoňová", "position": "", "year": 2009 }
+    ],
     "website": "https://zbl.sbsostrava.cz/",
     "instagram": "https://www.instagram.com/sbsostrava_mladez/",
     "logo": "../assets/img/teamLogos/ostravaLogo.jpg",
-    "note": "Soupiska a týmové info bude doplněno před turnajem."
+    "photo": "../assets/img/teamPhotos/sbsOstravaPhoto.pdf",
+    "note": ""
   },
   {
     "id": "zabiny-brno",
@@ -95,6 +109,7 @@
     "club": "Žabiny Brno",
     "coach": "Richard Fousek",
     "assistantCoach": "Barbora Holubová",
+    "assistantCoach2": "František Hubáček",
     "roster": [
       { "no": 1, "name": "Angela Poláchová", "position": "", "year": 2009 },
       { "no": 3, "name": "Valerie Špicová", "position": "", "year": 2010 },

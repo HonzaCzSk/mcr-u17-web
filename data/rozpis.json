@@ -22,19 +22,19 @@
 
   "sobota": [
     { "id": "P1", "cas": "10:00", "hala": "A",
-      "faze": "Prohrávající", "zapas": "L G01 – L G03", "skupina": "Play-off", 
+      "faze": "Prohrávající", "zapas": "L G01 – L G02", "skupina": "Play-off", 
       "tvcom": "https://tvcom.cz", "livestats": "" },
 
     { "id": "P2", "cas": "12:15", "hala": "A",
-      "faze": "Prohrávající", "zapas": "L G02 – L G04", "skupina": "Play-off",
+      "faze": "Prohrávající", "zapas": "L G03 – L G04", "skupina": "Play-off",
       "tvcom": "https://tvcom.cz", "livestats": "" },
 
     { "id": "V1", "cas": "14:30", "hala": "A", 
-      "faze": "Vítězové", "zapas": "W G01 – W G03", "skupina": "Play-off", 
+      "faze": "Vítězové", "zapas": "W G01 – W G02", "skupina": "Play-off", 
       "tvcom": "https://tvcom.cz", "livestats": "" },
 
     { "id": "V2", "cas": "16:45", "hala": "A",
-      "faze": "Vítězové", "zapas": "W G02 – W G04", "skupina": "Play-off", 
+      "faze": "Vítězové", "zapas": "W G03 – W G04", "skupina": "Play-off", 
       "tvcom": "https://tvcom.cz", "livestats": "" }
   ],
 
@@ -55,6 +55,6 @@
       "faze": "Finále", "zapas": "W V1 – W V2",
       "tvcom": "https://tvcom.cz", "livestats": "" },
 
-    { "id": "CER", "cas": "17:00", "hala": "A", "faze": "Ceremoniál", "zapas": "Vyhlášení výsledků a předání medailí", "type": "ceremony" }
+    { "id": "CER", "cas": "17:00", "hala": "A", "faze": "Ceremoniál", "zapas": "Vyhlášení výsledků a předání cen, medailí a pohárů", "type": "ceremony" }
   ]
 }
