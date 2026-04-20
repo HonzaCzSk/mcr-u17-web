@@ -35,7 +35,7 @@
     "city": "Praha",
     "club": "USK Praha",
     "coach": "Martin Petrovický",
-    "assistantCoach": "Barbora Schambergerová",
+    "assistantCoaches": ["Barbora Schambergerová", "František Hubáček"],
     "roster": [
       { "no": 2, "name": "Barbora Tejmarová", "position": "", "year": 2011 },
       { "no": 4, "name": "Sofie Robson", "position": "", "year": 2009 },
@@ -147,19 +147,33 @@
     "note": "Soupiska a týmové info bude doplněno před turnajem."
   },
   {
-    "id": "bk-lvice-litomerice",
-    "name": "BK Lvice Litoměřice",
+    "id": "dbak",
+    "name": "DBaK",
     "seed": "7",
     "group": null,
-    "city": "Litoměřice",
-    "club": "BK Lvice Litoměřice",
-    "coach": null,
+    "city": "Plzeň",
+    "club": "DBaK",
+    "coach": "Isaac Ruiz Ramirez",
     "assistantCoach": null,
-    "roster": [],
-    "website": "https://www.lvicelitomerice.cz/",
-    "instagram": "https://www.instagram.com/bklvicelitomerice/",
-    "logo": "../assets/img/teamLogos/bkLviceLitomericeLogo.webp",
-    "note": "Soupiska a týmové info bude doplněno před turnajem."
+    "roster": [
+      { "no": 1, "name": "Lenka Lukášková", "position": "", "year": 2009 },
+      { "no": 4, "name": "Alžběta Baxová", "position": "", "year": 2010 },
+      { "no": 5, "name": "Veronika Novotná", "position": "", "year": 2009 },
+      { "no": 6, "name": "Marie Hupačová", "position": "", "year": 2009 },
+      { "no": 11, "name": "Nikol Šimlová", "position": "", "year": 2010 },
+      { "no": 12, "name": "Tereza Röschelová", "position": "", "year": 2009 },
+      { "no": 14, "name": "Lilly Sofie Šímová", "position": "", "year": 2010 },
+      { "no": 16, "name": "Barbora Houdková", "position": "", "year": 2011 },
+      { "no": 19, "name": "Dora Sýkorová", "position": "", "year": 2011 },
+      { "no": 21, "name": "Martina Hercíková", "position": "", "year": 2011 },
+      { "no": 24, "name": "Adéla Burlová", "position": "", "year": 2010 },
+      { "no": 28, "name": "Ema Zahradníčková", "position": "", "year": 2009 },
+      { "no": 29, "name": "Anna Mokrá", "position": "", "year": 2009 }
+    ],
+    "website": "https://www.dbak.cz/",
+    "instagram": "https://www.instagram.com/dbak.basketbalovyklub/",
+    "logo": "../assets/img/teamLogos/DBaKLogo.jpg",
+    "note": ""
   },
   {
     "id": "tygri-praha",
