@@ -53,7 +53,7 @@
     "website": "https://www.uskbasket.cz/",
     "instagram": "https://www.instagram.com/uskmladez/",
     "logo": "../assets/img/teamLogos/USK_Logo.png",
-    "photo": "../../assets/img/teamPhotos/uskPrahaPhoto.JPEG",
+    "photo": "../assets/img/teamPhotos/uskPrahaPhoto.JPEG",
     "note": null
   },
   {
@@ -126,7 +126,7 @@
 
     ],
     "website": "https://www.bkzabiny.cz/",
-    "photo": "../../assets/img/teamPhotos/zabinyBrnoPhoto.JPEG",
+    "photo": "../assets/img/teamPhotos/zabinyBrnoPhoto.JPEG",
     "instagram": "https://www.instagram.com/zabiny_brno_mladez/",
     "logo": "../assets/img/teamLogos/zabinyBrnoLogo.png",
     "note": null
