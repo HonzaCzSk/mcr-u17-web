@@ -63,13 +63,26 @@
     "group": null,
     "city": "Strakonice",
     "club": "BK Strakonice",
-    "coach": null,
+    "coach": "Jaroslava Bernasová",
     "assistantCoach": null,
-    "roster": [],
+    "roster": [
+      { "no": 4, "name": "Bára Mrázová", "position": "", "year": 2010 },
+      { "no": 6, "name": "Nikola Mlnaříková", "position": "", "year": 2009 },
+      { "no": 7, "name": "Daryna Sharkan", "position": "", "year": 2009 },
+      { "no": 8, "name": "Michaela Karolová", "position": "", "year": 2009 },
+      { "no": 9, "name": "Isabela Polenová", "position": "", "year": 2009 },
+      { "no": 10, "name": "Valerie Hátlová", "position": "", "year": 2010 },
+      { "no": 11, "name": "Laura Šťastná", "position": "", "year": 2009 },
+      { "no": 12, "name": "Kateřina Zemanová", "position": "", "year": 2010 },
+      { "no": 13, "name": "Karolína Grossová", "position": "", "year": 2009 },
+      { "no": 20, "name": "Linda Kotrčová", "position": "", "year": 2009 },
+      { "no": 22, "name": "Nela Seidlová", "position": "", "year": 2010 }
+    ],
     "website": "https://basketst.cz/",
     "instagram": "https://www.instagram.com/bkstrakonice/",
     "logo": "../assets/img/teamLogos/bkStrakoniceLogo.png",
-    "note": "Soupiska a týmové info bude doplněno před turnajem."
+    "photo": "../assets/img/teamPhotos/bkStrakonicePhoto.JPG",
+    "note": ""
   },
   {
     "id": "sbs-ostrava",
