@@ -56,9 +56,9 @@ const CHANGES_KEY = "mcr_u15_rozpis_time_changes_v1";
   "Loser"
 ];
 const DAY_DATE = {
-  patek: "2026-04-24",
-  sobota: "2026-04-25",
-  nedele: "2026-04-26",
+  patek: "2026-05-01",
+  sobota: "2026-05-02",
+  nedele: "2026-05-03",
 };
 let ACTIVE_DAY = null;
 const LIVE_WINDOW_MIN = 120;  // jak dlouho po startu bereme zápas jako "live"

@@ -1,22 +1,22 @@
 {
-  "updated": "2026-04-13T10:00:00+02:00",
+  "updated": "2026-04-23T23:25:00+02:00",
   "patek": [
     { "id": "G01", "cas": "11:00", "hala": "A", 
-      "zapas": "1 – 8", "skupina": "Předkolo Play-off", 
+      "zapas": "Sokol Hradec Králové – DBaK", "skupina": "Předkolo Play-off", 
       "tvcom": "https://tvcom.cz", "livestats": ""},
     
     { "id": "G02", "cas": "13:15", "hala": "A",
-      "zapas": "4 – 5", "skupina": "Předkolo Play-off", 
+      "zapas": "Žabiny Brno – BK Strakonice", "skupina": "Předkolo Play-off", 
       "tvcom": "https://tvcom.cz", "livestats": "" },
       
     { "id": "G03", "cas": "15:30", "hala": "A", 
-      "zapas": "2 – 7", "skupina": "Předkolo Play-off", 
+      "zapas": "USK Praha – KP Brno", "skupina": "Předkolo Play-off", 
       "tvcom": "https://tvcom.cz", "livestats": "" },
 
     { "id": "CER", "cas": "17:15", "hala": "A", "zapas": "Zahájení Mistrovství republiky U17", "skupina": "Ceremoniál", "type": "ceremony" },
     
     { "id": "G04", "cas": "18:00", "hala": "A", 
-      "zapas": "3 – 6", "skupina": "Předkolo Play-off", 
+      "zapas": "SBŠ Ostrava – HB Basket Praha", "skupina": "Předkolo Play-off", 
       "tvcom": "https://tvcom.cz", "livestats": "" }
   ],
 
@@ -43,15 +43,15 @@
       "faze": "O 7. místo", "zapas": "L P1 – L P2", 
       "tvcom": "https://tvcom.cz", "livestats": "" },
 
-    { "id": "M5", "cas": "10:30", "hala": "A",
+    { "id": "M5", "cas": "10:45", "hala": "A",
       "faze": "O 5. místo", "zapas": "W P1 – W P2", 
       "tvcom": "https://tvcom.cz", "livestats": "" },
 
-    { "id": "M3", "cas": "12:45", "hala": "A",
+    { "id": "M3", "cas": "13:00", "hala": "A",
       "faze": "O 3. místo", "zapas": "L V1 – L V2", 
       "tvcom": "https://tvcom.cz", "livestats": "" },
       
-    { "id": "FIN", "cas": "15:00", "hala": "A",
+    { "id": "FIN", "cas": "15:15", "hala": "A",
       "faze": "Finále", "zapas": "W V1 – W V2",
       "tvcom": "https://tvcom.cz", "livestats": "" },
 

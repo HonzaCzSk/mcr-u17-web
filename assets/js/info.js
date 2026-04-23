@@ -86,13 +86,22 @@
     // 4) Vstupné
     const ticketsBody = data.tickets.paragraphs
       .map((p, i) =>
-        `<p class="${i === 0 ? "ticket-main" : i === 1 ? "muted" : ""}">
+        `<p class="${i === 0 ? "" : i === 1 ? "" : "h2"}">
           ${linkifyHTML(p)}
         </p>`
       )
       .join("");
 
     cards.push(cardHTML(data.tickets.title, ticketsBody));
+
+    /*
+    // 5) Organizační info
+    cards.push(cardHTML(
+      data.org.title,
+      `<p>${linkifyHTML(data.org.text)}</p>`
+    ));
+    */
+
     cardsEl.innerHTML = cards.join("");
 
     // CTA
