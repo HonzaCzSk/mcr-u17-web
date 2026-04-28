@@ -85,7 +85,7 @@
     ],
     "website": "https://zbl.sbsostrava.cz/",
     "instagram": "https://www.instagram.com/sbsostrava_mladez/",
-    "logo": "../assets/img/teamLogos/ostravaLogo.jpg",
+    "logo": "../assets/img/teamLogos/ostravaLogo.png",
     "photo": "../assets/img/teamPhotos/sbsOstravaPhoto.pdf",
     "note": ""
   },
@@ -177,7 +177,7 @@
     ],
     "website": "https://www.hbbasket.cz/",
     "instagram": "https://www.instagram.com/hbbasketpraha/",
-    "logo": "../assets/img/teamLogos/hbBasketPrahaLogo.png",
+    "logo": "../assets/img/teamLogos/hbBasketPrahaLogo.jpg",
     "photo": "../assets/img/teamPhotos/hbBasketPrahaPhoto.jpg",
     "note": ""
   },
@@ -188,14 +188,27 @@
     "group": null,
     "city": "Brno",
     "club": "KP Brno",
-    "coach": null,
+    "coach": "Martin Ševčík",
     "assistantCoach": null,
-    "roster": [],
+    "roster": [
+      { "no": 2, "name": "Dora Sedláčková", "position": "", "year": 2010 },
+      { "no": 5, "name": "Tereza Korbelová", "position": "", "year": 2010 },
+      { "no": 15, "name": "Veronika Čiklová", "position": "", "year": 2009 },
+      { "no": 25, "name": "Julie Jakubová", "position": "", "year": 2009 },
+      { "no": 34, "name": "Martina Tódtová", "position": "", "year": 2009 },
+      { "no": 35, "name": "Lucie Bartošová", "position": "", "year": 2009 },
+      { "no": 36, "name": "Beata Zítková", "position": "", "year": 2010 },
+      { "no": 37, "name": "Dagmar Bláhová", "position": "", "year": 2009 },
+      { "no": 42, "name": "Lucie Varmužková", "position": "", "year": 2009 },
+      { "no": 50, "name": "Zuzana Tylečková", "position": "", "year": 2009 },
+      { "no": 59, "name": "Karolína Mendelová", "position": "", "year": 2010 },
+      { "no": 60, "name": "Eva Havlištová", "position": "", "year": 2009 }
+    ],
     "website": "https://www.kpbrnobasket.cz/",
     "instagram": "https://www.instagram.com/kp_brno_mladez/",
-    "logo": "../assets/img/teamLogos/kpBrnoLogo.png",
-    "photo": "",
-    "note": "Soupiska a týmové info bude doplněna před turnajem."
+    "logo": "../assets/img/teamLogos/kpBrnoLogo.svg",
+    "photo": "../assets/img/teamPhotos/kpBrnoPhoto.JPG",
+    "note": ""
   },
   {
     "id": "dbak",
@@ -223,7 +236,7 @@
     ],
     "website": "https://www.dbak.cz/",
     "instagram": "https://www.instagram.com/dbak.basketbalovyklub/",
-    "logo": "../assets/img/teamLogos/DBaKLogo.jpg",
+    "logo": "../assets/img/teamLogos/DBaKLogo.png",
     "photo": "../assets/img/teamPhotos/dbakPhoto.jpeg",
     "note": ""
   }

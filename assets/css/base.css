@@ -3233,8 +3233,9 @@ h1.h1 {
 .team-info__logo img{
   width: 72px;
   height: 72px;
+  padding: 1px;
   border-radius: 16px;
-  object-fit: cover;
+  object-fit: contain;
   border: 1px solid rgba(255,255,255,.12);
   background: rgba(255,255,255,.03);
 }
