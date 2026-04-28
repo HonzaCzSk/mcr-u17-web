@@ -115,9 +115,9 @@
 
     ],
     "website": "https://www.bkzabiny.cz/",
-    "photo": "../assets/img/teamPhotos/zabinyBrnoPhoto.JPEG",
     "instagram": "https://www.instagram.com/zabiny_brno_mladez/",
     "logo": "../assets/img/teamLogos/zabinyBrnoLogo.png",
+    "photo": "../assets/img/teamPhotos/zabinyBrnoPhoto.JPEG",
     "note": null
   },
   
@@ -195,7 +195,7 @@
     "instagram": "https://www.instagram.com/kp_brno_mladez/",
     "logo": "../assets/img/teamLogos/kpBrnoLogo.png",
     "photo": "",
-    "note": "Soupiska a týmové info bude doplněno před turnajem."
+    "note": "Soupiska a týmové info bude doplněna před turnajem."
   },
   {
     "id": "dbak",
