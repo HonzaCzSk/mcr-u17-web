@@ -10,8 +10,6 @@
   --line: rgba(11,11,14,.12);
   --card: #ffffff;
 
-  --logo-bg: #f0f0f2;   /* světlé šedé pozadí loga v light modu */
-
   --accent: #ff3b30;      /* červená */
   --accentB: #ffb000;     /* highlight */
   --accent2: #111827;     /* topbar */
@@ -3239,7 +3237,7 @@ h1.h1 {
   border-radius: 16px;
   object-fit: contain;
   border: 1px solid rgba(255,255,255,.12);
-  background: var(--logo-bg);
+  background: rgba(255,255,255,.03);
 }
 
 .team-logo-placeholder{
