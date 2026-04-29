@@ -3,21 +3,21 @@
   "patek": [
     { "id": "G01", "cas": "11:00", "hala": "A", 
       "zapas": "Sokol Hradec Králové – DBaK", "skupina": "Čtvrtfinále", 
-      "tvcom": "https://tvcom.cz", "livestats": "2842243"},
+      "tvcom": "https://tvcom.cz/Zapas/Sport-Basketbal/Soutez-U17-Extraliga/Pohlavi-Zeny/Sezona-2025-2026/263858-Sokol-Hradec-Kralove-DBaK.htm", "livestats": "2842243"},
     
     { "id": "G02", "cas": "13:15", "hala": "A",
       "zapas": "Žabiny Brno – BK Strakonice", "skupina": "Čtvrtfinále", 
-      "tvcom": "https://tvcom.cz", "livestats": "2842244" },
+      "tvcom": "https://tvcom.cz/Zapas/Sport-Basketbal/Soutez-U17-Extraliga/Pohlavi-Zeny/Sezona-2025-2026/263859-Frisco-Brno-BK-Czech-coal-Aldast-Strakonice.htm", "livestats": "2842244" },
       
     { "id": "G03", "cas": "15:30", "hala": "A", 
       "zapas": "USK Praha – KP Brno", "skupina": "Čtvrtfinále", 
-      "tvcom": "https://tvcom.cz", "livestats": "2842245" },
+      "tvcom": "https://tvcom.cz/Zapas/Sport-Basketbal/Soutez-U17-Extraliga/Pohlavi-Zeny/Sezona-2025-2026/263860-USK-Praha-Valosun-Brno.htm", "livestats": "2842245" },
 
     { "id": "CER", "cas": "17:15", "hala": "A", "zapas": "Zahájení Mistrovství republiky U17", "skupina": "Ceremoniál", "type": "ceremony" },
     
     { "id": "G04", "cas": "18:00", "hala": "A", 
       "zapas": "SBŠ Ostrava – HB Basket Praha", "skupina": "Čtvrtfinále", 
-      "tvcom": "https://tvcom.cz", "livestats": "2842246" }
+      "tvcom": "https://tvcom.cz/Zapas/Sport-Basketbal/Soutez-U17-Extraliga/Pohlavi-Zeny/Sezona-2025-2026/263861-SBS-Ostrava-HB-Basket-Praha.htm", "livestats": "2842246" }
   ],
 
   "sobota": [
