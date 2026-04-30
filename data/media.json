@@ -1,31 +1,31 @@
 {
-  "updated": "2026-04-09",
+  "updated": "30. 4. 2026 20:05",
 
   "featured": [
     {
       "title": "Oficiální galerie – Zonerama",
-      "url": "https://www.zonerama.com/tvuj-odkaz",
+      "url": "",
       "tag": "ZNRM"
     }
   ],
 
   "days": [
     {
-      "label": "Pátek 1. 5.",
+      "label": "",
       "links": [
-        { "title": "Galerie – pátek", "url": "https://zonerama.com/patek" }
+        { "title": "Pátek 1. 5.", "url": "" }
       ]
     },
     {
-      "label": "Sobota 2. 5.",
+      "label": "",
       "links": [
-        { "title": "Galerie – sobota", "url": "https://zonerama.com/sobota" }
+        { "title": "Sobota 2. 5.", "url": "" }
       ]
     },
     {
-      "label": "Neděle 3. 5.",
+      "label": "",
       "links": [
-        { "title": "Galerie – neděle", "url": "https://zonerama.com/nedele" }
+        { "title": "Neděle 3. 5.", "url": "" }
       ]
     }
   ],
