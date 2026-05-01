@@ -1,5 +1,5 @@
 {
-  "updated": "30. 4. 2026 20:05",
+  "updated": "1. 5. 2026 22:10",
 
   "featured": [
     {
@@ -11,21 +11,24 @@
 
   "days": [
     {
-      "label": "",
+      "label": "Pátek 1. 5.",
       "links": [
-        { "title": "Pátek 1. 5.", "url": "" }
+        { "title": "Sokol Hradec Králové — DBaK", "url": "https://eu.zonerama.com/mplacek/Album/15204302" },
+        { "title": "Žabiny Brno — BK Strakonice", "url": "https://eu.zonerama.com/mplacek/Album/15204984" },
+        { "title": "USK Praha — KP Brno", "url": "https://eu.zonerama.com/mplacek/Album/15205698" },
+        { "title": "SBŠ Ostrava — HB Basket Praha (nejsou k dispozici)", "url": "" }
       ]
     },
     {
-      "label": "",
+      "label": "Sobota 2. 5.",
       "links": [
-        { "title": "Sobota 2. 5.", "url": "" }
+        { "title": "", "url": "" }
       ]
     },
     {
-      "label": "",
+      "label": "Neděle 3. 5.",
       "links": [
-        { "title": "Neděle 3. 5.", "url": "" }
+        { "title": "", "url": "" }
       ]
     }
   ],
