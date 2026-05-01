@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-01T15:45:00+02:00",
+  "updated": "2026-05-01T17:32:00+02:00",
   "patek": [
     { "id": "G01", "cas": "11:00", "hala": "A", 
       "zapas": "Sokol Hradec Králové – DBaK", "skupina": "Čtvrtfinále", 
@@ -26,11 +26,11 @@
       "tvcom": "https://tvcom.cz", "livestats": "" },
 
     { "id": "P2", "cas": "12:15", "hala": "A",
-      "faze": "Prohrávající", "zapas": "L G03 – L G04", "skupina": "O 5. až 8. místo",
+      "faze": "Prohrávající", "zapas": "KP Brno – L G04", "skupina": "O 5. až 8. místo",
       "tvcom": "https://tvcom.cz", "livestats": "" },
 
     { "id": "V1", "cas": "14:30", "hala": "A", 
-      "faze": "Vítězové", "zapas": "W G03 – W G04", "skupina": "Semifinále", 
+      "faze": "Vítězové", "zapas": "USK Praha – W G04", "skupina": "Semifinále", 
       "tvcom": "https://tvcom.cz", "livestats": "" },
 
     { "id": "V2", "cas": "16:45", "hala": "A",
