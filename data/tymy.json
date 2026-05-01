@@ -11,6 +11,7 @@
     "roster": [
       { "no": 4, "name": "Dominika Pencáková", "pos": "", "year": 2009},
       { "no": 5, "name": "Emma Černá", "pos": "", "year": 2010 },
+      { "no": 6, "name": "Viktorie Volejníková", "pos": "", "year": 2009 },
       { "no": 7, "name": "Adéla Mlejnková", "pos": "", "year": 2010 },
       { "no": 8, "name": "Anna Fejksová", "pos": "", "year": 2010 },
       { "no": 9, "name": "Eliška Naarová", "pos": "", "year": 2009 },
@@ -19,7 +20,6 @@
       { "no": 13, "name": "Vendula Salaková", "pos": "", "year": 2010 },
       { "no": 14, "name": "Klára Šimůnková", "pos": "", "year": 2010 },
       { "no": 16, "name": "Natálie Srchová", "pos": "", "year": 2010 },
-      { "no": 18, "name": "Viktorie Volejníková", "pos": "", "year": 2009 },
       { "no": 21, "name": "Julie Přichystalová", "pos": "", "year": 2009 },
       { "no": 22, "name": "Aneta Bohuslavová", "pos": "", "year": 2009 },
       { "no": 31, "name": "Zuzana Vosková", "pos": "", "year": 2009 }
