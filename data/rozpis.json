@@ -15,7 +15,7 @@
 
     { "id": "CER", "cas": "17:15", "hala": "A", "zapas": "Zahájení Mistrovství republiky U17", "skupina": "Ceremoniál", "type": "ceremony" },
     
-    { "id": "G04", "cas": "18:00", "hala": "A", 
+    { "id": "G04", "cas": "18:15", "hala": "A", 
       "zapas": "SBŠ Ostrava – HB Basket Praha", "skupina": "Čtvrtfinále", 
       "tvcom": "https://tvcom.cz/Zapas/Sport-Basketbal/Soutez-U17-Extraliga/Pohlavi-Zeny/Sezona-2025-2026/263861-SBS-Ostrava-HB-Basket-Praha.htm", "livestats": "2842246" }
   ],
