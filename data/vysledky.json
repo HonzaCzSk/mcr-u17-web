@@ -7,7 +7,7 @@
     "G04": { "stav": "FIN", "skore": "67:56", "quarters": [[12, 16], [30, 26], [47, 44], [67, 56]], "note": "" },
 
     "P1":  { "stav": "FIN", "skore": "49:44", "quarters": [[10, 12],[17, 25], [38, 28], [49, 44]], "note": "" },
-    "P2":  { "stav": "SCHEDULED", "skore": "—", "quarters": [], "note": "" },
+    "P2":  { "stav": "LIVE", "skore": "—", "quarters": [], "note": "" },
     "V1":  { "stav": "SCHEDULED", "skore": "—", "quarters": [], "note": "" },
     "V2":  { "stav": "SCHEDULED", "skore": "—", "quarters": [], "note": "" },
 
