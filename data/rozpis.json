@@ -27,11 +27,11 @@
 
     { "id": "P2", "cas": "12:15", "hala": "A",
       "faze": "Prohrávající", "zapas": "KP Brno – HB Basket Praha", "skupina": "O 5. až 8. místo",
-      "tvcom": "https://tvcom.cz/Zapas/Sport-Basketbal/Soutez-U17-Extraliga/Pohlavi-Zeny/Sezona-2025-2026/263903-Valosun-Brno-HB-Basket-Praha.htm", "livestats": "" },
+      "tvcom": "https://tvcom.cz/Zapas/Sport-Basketbal/Soutez-U17-Extraliga/Pohlavi-Zeny/Sezona-2025-2026/263903-Valosun-Brno-HB-Basket-Praha.htm", "livestats": "2845190" },
 
     { "id": "V1", "cas": "14:30", "hala": "A", 
       "faze": "Vítězové", "zapas": "USK Praha – SBŠ Ostrava", "skupina": "Semifinále", 
-      "tvcom": "https://tvcom.cz/Zapas/Sport-Basketbal/Soutez-U17-Extraliga/Pohlavi-Zeny/Sezona-2025-2026/263905-USK-Praha-SBS-Ostrava.htm", "livestats": "" },
+      "tvcom": "https://tvcom.cz/Zapas/Sport-Basketbal/Soutez-U17-Extraliga/Pohlavi-Zeny/Sezona-2025-2026/263905-USK-Praha-SBS-Ostrava.htm", "livestats": "2845191" },
 
     { "id": "V2", "cas": "16:45", "hala": "A",
       "faze": "Vítězové", "zapas": "Sokol Hradec Králové – Žabiny Brno", "skupina": "Semifinále", 
