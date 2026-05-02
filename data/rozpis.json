@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-01T22:10:00+02:00",
+  "updated": "2026-05-02T11:45:00+02:00",
   "patek": [
     { "id": "G01", "cas": "11:00", "hala": "A", 
       "zapas": "Sokol Hradec Králové – DBaK", "skupina": "Čtvrtfinále", 
@@ -40,11 +40,11 @@
 
   "nedele": [
     { "id": "M7", "cas": "08:30", "hala": "A", 
-      "faze": "O 7. místo", "zapas": "L P1 – L P2", 
+      "faze": "O 7. místo", "zapas": "BK Strakonice – L P2", 
       "tvcom": "https://tvcom.cz", "livestats": "" },
     
     { "id": "M5", "cas": "10:45", "hala": "A",
-      "faze": "O 5. místo", "zapas": "W P1 – W P2", 
+      "faze": "O 5. místo", "zapas": "DBaK – W P2", 
       "tvcom": "https://tvcom.cz", "livestats": "" },
 
     { "id": "M3", "cas": "13:00", "hala": "A",
