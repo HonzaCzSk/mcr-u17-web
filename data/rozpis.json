@@ -49,11 +49,11 @@
 
     { "id": "M3", "cas": "13:00", "hala": "A",
       "faze": "O 3. místo", "zapas": "SBŠ Ostrava – Žabiny Brno", 
-      "tvcom": "https://tvcom.cz/Zapas/Sport-Basketbal/Soutez-U17-Extraliga/Pohlavi-Zeny/Sezona-2025-2026/263958-SBS-Ostrava-Frisco-Brno.htm", "livestats": "" },
+      "tvcom": "https://tvcom.cz/Zapas/Sport-Basketbal/Soutez-U17-Extraliga/Pohlavi-Zeny/Sezona-2025-2026/263958-SBS-Ostrava-Frisco-Brno.htm", "livestats": "2845316" },
       
     { "id": "FIN", "cas": "15:15", "hala": "A",
       "faze": "Finále", "zapas": "USK Praha – Sokol Hradec Králové",
-      "tvcom": "https://tvcom.cz/Zapas/Sport-Basketbal/Soutez-U17-Extraliga/Pohlavi-Zeny/Sezona-2025-2026/263959-USK-Praha-Sokol-Hradec-Kralove.htm", "livestats": "" },
+      "tvcom": "https://tvcom.cz/Zapas/Sport-Basketbal/Soutez-U17-Extraliga/Pohlavi-Zeny/Sezona-2025-2026/263959-USK-Praha-Sokol-Hradec-Kralove.htm", "livestats": "2845317" },
 
     { "id": "CER", "cas": "17:00", "hala": "A", "faze": "Ceremoniál", "zapas": "Vyhlášení výsledků a předání cen, medailí a pohárů", "type": "ceremony" }
   ]
