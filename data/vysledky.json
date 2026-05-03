@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-03T08:29:00+02:00",
+  "updated": "2026-05-03T09:30:00+02:00",
   "games": {
     "G01": { "stav": "FIN", "skore": "68:34", "quarters": [[22, 11], [34, 16], [56, 24], [68, 34]], "note": "" },
     "G02": { "stav": "FIN", "skore": "64:62", "quarters": [[21, 16], [36, 32], [47, 48], [64, 62]], "note": "" },
@@ -11,7 +11,7 @@
     "V1":  { "stav": "FIN", "skore": "73:68", "quarters": [[17, 15], [32, 36], [54, 44], [73, 68]], "note": "" },
     "V2":  { "stav": "FIN", "skore": "70:56", "quarters": [[7, 17], [30, 29], [56, 45], [70, 56]], "note": "" },
 
-    "M7":  { "stav": "LIVE", "skore": "—", "quarters": [[13, 7]], "note": "" },
+    "M7":  { "stav": "LIVE", "skore": "—", "quarters": [[13, 7], [31, 24]], "note": "" },
     "M5":  { "stav": "SCHEDULED", "skore": "—", "quarters": [], "note": "" },
     "M3":  { "stav": "SCHEDULED", "skore": "—", "quarters": [], "note": "" },
     "FIN": { "stav": "SCHEDULED", "skore": "—", "quarters": [], "note": "" }
