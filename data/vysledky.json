@@ -12,7 +12,7 @@
     "V2":  { "stav": "FIN", "skore": "70:56", "quarters": [[7, 17], [30, 29], [56, 45], [70, 56]], "note": "" },
 
     "M7":  { "stav": "FIN", "skore": "—", "quarters": [[13, 7], [31, 24], [56, 44], [68, 58]], "note": "" },
-    "M5":  { "stav": "LIVE", "skore": "—", "quarters": [], "note": "" },
+    "M5":  { "stav": "LIVE", "skore": "—", "quarters": [[11, 12], [25, 20]], "note": "" },
     "M3":  { "stav": "SCHEDULED", "skore": "—", "quarters": [], "note": "" },
     "FIN": { "stav": "SCHEDULED", "skore": "—", "quarters": [], "note": "" }
   }
