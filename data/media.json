@@ -37,14 +37,14 @@
   "thumbs": [
     { "src": "../assets/img/photos/DBaKPhoto.jpg", "alt": "DBaK Photo" },
     { "src": "../assets/img/photos/HBPrahaPhoto.jpg", "alt": "HB Basket Praha Photo" },
-    { "src": "../assets/img/photos/KPBrnoPhoto.jpg", "alt": "KP Brno Photo" },
+    { "src": "../assets/img/photos/KPbrnoPhoto.jpg", "alt": "KP Brno Photo" },
     { "src": "../assets/img/photos/OstravaPhoto.jpg", "alt": "Ostrava Photo" },
     { "src": "../assets/img/photos/SokolHKPhoto.jpg", "alt": "Sokol Hradec Králové Photo" },
     { "src": "../assets/img/photos/StrakonicePhoto.jpg", "alt": "Strakonice Photo" },
-    { "src": "../assets/img/photos/USKPhoto.jpg", "alt": "USK Photo" },
+    { "src": "../assets/img/photos/USKphoto.jpg", "alt": "USK Photo" },
     { "src": "../assets/img/photos/ZabinyPhoto.jpg", "alt": "Zabiny Photo" },
     { "src": "../assets/img/photos/AllTeamsPhoto.jpg", "alt": "All Teams Photo" },
-    { "src": "../assets/img/photos/SBŠBronzePhoto.jpg", "alt": "SBŠ Ostrava s bronzovými medailemi" },
+    { "src": "../assets/img/photos/SBŠbronzePhoto.jpg", "alt": "SBŠ Ostrava s bronzovými medailemi" },
     { "src": "../assets/img/photos/HKWinnersPhoto.jpg", "alt": "Sokol Hradec Králové vítězky šampionátu" }
   ],
 
