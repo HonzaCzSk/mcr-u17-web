@@ -6,6 +6,8 @@ The site provides match schedules, results, team rosters, and tournament informa
 
 Live website: <https://mcr-u17.cz>
 
+- <b>TOURNAMENT HAS ENDED & PROJECT OFFICIALLY CLOSED (no more upcoming updates)</b>
+
 ## Tech Stack
 
 - HTML
